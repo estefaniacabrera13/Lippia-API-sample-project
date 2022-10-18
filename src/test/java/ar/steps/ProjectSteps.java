@@ -16,19 +16,30 @@ public class ProjectSteps extends PageSteps {
         validator.validate();
     }
 
-    @And("un id_Wspace")
+    @And("tengo un id_Wspace")
     public void unId_Wspace() {
         ProjectService.ID_W_SPACE.set("634ca6df3efac44cdc272e6f");
     }
 
-    @Given("un id project de la respuesta")
+    @And("se obtuvo un id project de la respuesta")
     public void unIdProjectDeLaRespuesta() {
         ProjectResponse[] idProject = (ProjectResponse[])APIManager.getLastResponse().getResponse();
         ProjectService.ID_PROJECT.set(idProject[1].getId());
     }
 
-    @Given("un id project incorrecto")
+    @And("un id project incorrecto")
     public void unIdProjectIncorrecto() {
-        ProjectService.ID_PROJECT.set("634ca6df3efac44cdc272e6f");
+        ProjectService.ID_PROJECT.set("634ca791d4fbf65f3405fa0");
+    }
+
+    @And("se obtuvo el nombre '(.*)' del project")
+    public void seObtuvoElNombreNameDelProject(String name) {
+        ProjectService.NAME_PROJECT.set(name);
+    }
+
+    @And("se valida que el nombre '(.*)' fue editado")
+    public void seValidaQueElNombreNameFueEditado(String name) {
+        validator.validateName(name);
+
     }
 }
