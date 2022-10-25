@@ -1,5 +1,5 @@
 {
-  "url": "{{base.url}}",
+  "url": "https://api.clockify.me/api/v1",
   "headers": {
     "X-Api-Key": "{{api-key}}",
     "Content-Type": "application/json"

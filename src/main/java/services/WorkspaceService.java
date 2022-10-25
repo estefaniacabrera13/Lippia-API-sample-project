@@ -16,8 +16,7 @@ public class WorkspaceService extends BaseService {
 
     private static Map<String, String> setParams() {
         Map<String, String> params = new HashMap<String, String>();
-        params.put("base.url", PropertyManager.getProperty("base.api.url"));
-        params.put("api-key",API_KEY.get());
+        params.put("api-key", PropertyManager.getProperty("api-key"));
         return params;
     }
 

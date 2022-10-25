@@ -18,8 +18,8 @@ public class WorkspaceSteps extends PageSteps {
         WorkspaceValidator.validate();
     }
 
-    @Given("X-Api-Key invalido")
-    public void xApiKeyInvalido() {
-        BaseService.API_KEY.set("NDRmZWUwYzEtOTZhMS00NDk5LWJkZWItY2FiNmY1MjQ3NGN");
-    }
+    //@Given("X-Api-Key invalido")
+    //public void xApiKeyInvalido() {
+    //    BaseService.API_KEY.set("NDRmZWUwYzEtOTZhMS00NDk5LWJkZWItY2FiNmY1MjQ3NGN");
+    //}
 }
