@@ -3,7 +3,7 @@ Feature: Projects
 
   Background:
     Given tengo un id_Wspace
-
+  @GetProjects
   Scenario Outline: Consulta Project resultado exitoso
     When I perform a '<operation>' to '<entity>' endpoint with the '<jsonName>' and ''
     Then se obtuvo el status code <status>
@@ -34,6 +34,7 @@ Feature: Projects
       | operation | entity | jsonName         | response       | status |
       | GET       | ERROR  | projectId/rq_404 | project/rs_404 | 400    |
 
+  @GetProjects
   Scenario Outline: Consulta Project por Id
     When I perform a '<operation>' to 'PROJECTS' endpoint with the 'project/rq' and ''
     And se valida que el id no sea null
