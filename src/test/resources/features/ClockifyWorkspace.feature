@@ -1,4 +1,4 @@
-@Project
+@Smoke @Project
 Feature: Workspace
 
   Scenario Outline: Consulta Workspace resultado exitoso

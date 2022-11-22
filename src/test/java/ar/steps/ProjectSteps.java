@@ -18,18 +18,18 @@ public class ProjectSteps extends PageSteps {
 
     @And("tengo un id_Wspace")
     public void unId_Wspace() {
-        ProjectService.ID_W_SPACE.set("634ca6df3efac44cdc272e6f");
+        ProjectService.ID_W_SPACE.set("6371978aa9578e2c1826faba");
     }
 
     @And("se obtuvo un id project de la respuesta")
     public void unIdProjectDeLaRespuesta() {
         ProjectResponse[] idProject = (ProjectResponse[])APIManager.getLastResponse().getResponse();
-        ProjectService.ID_PROJECT.set(idProject[1].getId());
+        ProjectService.ID_PROJECT.set(idProject[0].getId());
     }
 
     @And("un id project incorrecto")
     public void unIdProjectIncorrecto() {
-        ProjectService.ID_PROJECT.set("634ca791d4fbf65f3405fa0");
+        ProjectService.ID_PROJECT.set("637197af46d859292cc65c8");
     }
 
     @And("se obtuvo el nombre '(.*)' del project")

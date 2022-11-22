@@ -1,0 +1,21 @@
+{
+  "url": "{{base.api.url}}",
+  "headers": {
+    "X-Api-Key": "{{api-key}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "start": "2022-11-13T13:48:14.000Z",
+    "billable": "true",
+    "description": "{{description}}",
+    "projectId": "637197af46d859292cc65c8b",
+    "taskId": "6372d319a9578e2c18331ff7",
+    "end": "2022-11-13T13:50:14.000Z",
+    "tagIds": [
+      "6372d4681804242f350f4f8f"
+    ],
+    "customFields": []
+  },
+
+  "endpoint": "/workspaces/{{workspaceId}}/time-entries/{{idHours}}"
+}

@@ -47,6 +47,30 @@ public enum EntityConfiguration {
         public Class<?> getEntityService() {
             return ErrorService.class;
         }
+    },
+    HOURS {
+        @Override
+        public Class<?> getEntityService() {
+            return HoursService.class;
+        }
+    },
+    ADDHOURS {
+        @Override
+        public Class<?> getEntityService() {
+            return AddHoursService.class;
+        }
+    },
+    EDITHOURS{
+        @Override
+        public Class<?> getEntityService() {
+            return EditHoursService.class;
+        }
+    },
+    DELETEHOURS{
+        @Override
+        public Class<?> getEntityService() {
+            return DeleteHoursService.class;
+        }
     };
 
 
